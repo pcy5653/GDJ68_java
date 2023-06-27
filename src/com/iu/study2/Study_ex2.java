@@ -71,13 +71,13 @@ public class Study_ex2 {
 				break;
 			default:
 				System.out.println("다시 입력하세요.");
+				loginResult = false;
 			}
-			/*
-			 * 로그인이 됐을 시만 출력되게 만들기! 한번만 이용해서 현재 loginResult = true
-			 * if(loginResult){
-			 * 		System.out.println("실 급여 : "+ sal);
-			 * }
-			 * */
+			// 로그인이 됐을 시만 출력되게 만들기! 한번만 이용해서 현재 loginResult = true
+			if(loginResult){
+			  	System.out.println("실 급여 : "+ sal);
+			}
+			
 		}
 		System.out.println("프로그램이 종료되었습니다.");
 	}
