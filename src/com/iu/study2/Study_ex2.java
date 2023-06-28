@@ -10,7 +10,6 @@ public class Study_ex2 {
 		int id=1234;
 		int pw=5678;
 		double pay;
-		
 		boolean loginResult=false; // true 로그인성공, false 로그인실패
 		
 		// 1. 로그인 과정
@@ -49,7 +48,7 @@ public class Study_ex2 {
 		// 계약직 : 원천징수 3.3%
 		// 실급여 출력
 		
-		// 1. 정규직 , 2. 계약직	과 급여 입력
+		// 1. 정규직 , 2. 계약직	과 급여 입력 
 		if(loginResult) {
 			System.out.println("1 정규직, 2 : 계약직");
 			int select = sc.nextInt();
@@ -63,11 +62,11 @@ public class Study_ex2 {
 				tax1 = tax1 + sal*0.01;
 				tax1 = tax1 + sal*0.01;
 				sal = (int)(sal - tax1);
-				System.out.println("실 급여 : "+ sal);
+				//System.out.println("실 급여 : "+ sal);
 				break;
 			case 2:
 				sal = (int)(sal*0.967);
-				System.out.println("실 급여 : "+ sal);
+				//System.out.println("실 급여 : "+ sal);
 				break;
 			default:
 				System.out.println("다시 입력하세요.");
