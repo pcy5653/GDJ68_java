@@ -54,12 +54,28 @@ public class Study5_while_ex1 {
 		// 현재레벨, gold가 출력
 		
 		int gold = 0;
-		
+		int level = 1;
 		while(login) {
 			System.out.println("게임을 시작하겠습니다.");
 			
-			for(int level = 1; level < 15; level++) {
+			for(level = 1; level < 15; level++) {
 				System.out.println("현재 레벨 : "+ level);
+				
+				// 각 레벨에 따른 gold지급 (먼저해줘야 각 레벨에 종료시에 출력됨.)
+				switch(level) {
+				case 5:
+					gold+=1000;
+					break;
+				case 10:
+					gold+=2000;
+					break;
+				}
+						
+				// 레벨에 따른 마리수 표시
+				for(int i=0; i<level*3; i++) {
+					System.out.println(i+1+"마리 사냥성공");
+				}
+				
 				System.out.println("게임 진행은 1, 종료는 2");
 				int answer = sc.nextInt();
 				
@@ -68,29 +84,49 @@ public class Study5_while_ex1 {
 					break;
 				}
 				
-				for(int i=0; i<level*3; i++) {
-					System.out.println("몬스터 사냥성공");
-				}
-					
-				switch(level) {
-				case 5:
-					gold = gold+1000;
-					System.out.println("현재 GOLD의 갯수는 "+ gold+"입니다.");
-					break;
-				case 10:
-					gold = gold+2000;
-					System.out.println("현재 GOLD의 갯수는 "+ gold+"입니다.");
-					break;
-				case 15:
-					gold = gold+3000;
-					System.out.println("현재 GOLD의 갯수는 "+ gold+"입니다.");
-					login =! login;
-					break;
-				}	
+			}
+			//switch문에 입력했을 시 15레벨 출력 안되기에 for문 밖에 작성
+			if(level==15) {
+				gold+=3000;
+				login =! login;
+				break;
 			}
 		}
+		System.out.println(level+" 현재레벨");
+		System.out.println(gold+" 골드");
 		System.out.println("프로그램 종료");
 		
+		/*
+		[강사님]
+		int a;
+		
+		for(a=1; a<15; a++) {
+			
+			// 5의배수 레벨 시 골드 지급
+			if(a%5==0) {
+				gold = gold+level/5*1000;
+			}
+			
+			System.out.println("1,2");
+			int select = sc.nextInt();
+			if(select != 1) {
+				break;
+			}
+			
+			for(int monster=0;monster<a*3;monster++) {
+				System.out.println(monster+1+"마리 사냥성공");
+			}
+			System.out.println(a+1+"로 랩업햇습니다.");
+		}
+		
+		// 마지막 15레벨은 for문을 나오기 때문에 나와서 작성
+		if(a==15) {
+			gold+=3000;
+		}
+		
+		System.out.println(a+" 현재레벨");
+		System.out.println(gold+" 골드");
+		*/
 	}
 
 }
