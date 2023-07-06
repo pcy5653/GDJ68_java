@@ -10,7 +10,7 @@ public class Study3_ex1 {
 		
 		int ko = 80;
 		int en = 70;
-		int ma = 90;
+		int ma = 90; 
 		
 		int sum = ko + en + ma;
 		int avg = sum/3;

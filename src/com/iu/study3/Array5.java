@@ -20,7 +20,7 @@ public class Array5 {
 				//i가 2이면 0,1비교
 				//i가 3이면 0,1,2비교
 				//...
-				if(nums[i]==nums[j]) {
+				if(nums[i]==nums[j]) { 
 					i--;
 				}
 			

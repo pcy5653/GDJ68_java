@@ -10,7 +10,7 @@ public class Study4_for_ex1 {
 				System.out.println(i);
 			}
 		}
-		
+		 
 		// 0 - 10미만의 숫자 중 짝수만 출력
 		// 단, if문 사용 X
 		

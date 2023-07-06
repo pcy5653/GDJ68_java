@@ -16,7 +16,7 @@ public class Student {
 		avg = total/3;
 	}
 	
-	// 접근지정자 private으로 인해 값 가져오고 내보내기 위해 각 2개의 메서드 생성
+	// 접근지정자 private으로 인해 값 가져오고 내보내기 위해 각 2개의 메서드 생성 
 	// Source - Generate setting and getting 클릭
 	public int getKor() {
 		return kor;

@@ -17,7 +17,7 @@ public class StudyMain {
 		
 		
 		// Student class 출력
-		Student s1 = new Student();
+		Student s1 = new Student(); 
 		s1.name = "박채연";
 		s1.gender = 'f';
 		

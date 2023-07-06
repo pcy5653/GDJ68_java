@@ -24,7 +24,7 @@ public class S3Main {
 		System.out.println(result);
 		
 //		Test test = new Test();
-//		test.hap(10, 10.2F);
+//		test.hap(10, 10.2F); 
 		
 		
 		// 생성자 (Constructor)  

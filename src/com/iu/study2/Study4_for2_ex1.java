@@ -16,7 +16,7 @@ public class Study4_for2_ex1 {
 			System.out.println("단발 : 1, 점사 : 2");
 			int a = sc.nextInt();
 			
-			if(a==1) {
+			if(a==1) { 
 				for(int i=0; i<30; i++) {
 					System.out.println("탕");
 				}

@@ -6,3 +6,4 @@ public class Ramyun {
 	String title;
 	int price;
 }
+ 

@@ -9,7 +9,7 @@ public class Hap {
 	
 	//홀수면 true, 짝수면 false 결과를 리턴하라.
 	public boolean h2(int num) {
-		boolean result=false;
+		boolean result=false; 
 		
 		if(num%2==0) {
 			result =! result;

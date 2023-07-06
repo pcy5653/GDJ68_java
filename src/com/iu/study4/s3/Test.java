@@ -16,7 +16,7 @@ public class Test {
 		System.out.println("method2");
 	}
 	
-	// test1과 test2의 값 비교
+	// test1과 test2의 값 비교 
 	public boolean same(Test t) {
 		// num1과 다른 객체의 num1이 같고
 		// num2와 다른 객체의 num2가 같으면 true리턴, 아니면 false.

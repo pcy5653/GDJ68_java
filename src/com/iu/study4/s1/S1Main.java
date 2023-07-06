@@ -9,7 +9,7 @@ public class S1Main {
 		Hap hap = new Hap();
 		int sum = hap.h1(10,20);
 		// sum *2
-		System.out.println(sum*2);
+		System.out.println(sum*2); 
 		
 		// h2 결과 출력
 		boolean result = hap.h2(21);

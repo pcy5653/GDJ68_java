@@ -25,7 +25,7 @@ public class Array1 {
 		//문자열 3개를 모을 배열 선언
 		String [] names = new String[3];
 		System.out.println(names);
-		System.out.println(names[0]);
+		System.out.println(names[0]); 
 		
 		int [] nums2 = {1,2,3};
 		

@@ -10,3 +10,4 @@ public class Card {
 	
 	// 멤버메서드 (instance method)
 }
+ 

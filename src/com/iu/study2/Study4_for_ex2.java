@@ -10,7 +10,7 @@ public class Study4_for_ex2 {
 		int id = 1234;
 		int pw = 5678;
 		boolean login = false;
-
+ 
 		// 로그인 시도는 최대 5번까지
 		for(int i = 0; i < 5; i++) {
 			System.out.println("ID 입력하세요");

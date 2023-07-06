@@ -9,7 +9,7 @@ public class Study4_for {
 //		for(int i = 0; i<5; i++) {
 //			System.out.println("Hello");
 //		}
-		
+		 
 		// for문 쉬운 예제
 		// 키보드로부터 출력횟수를 입력받아 hello를 출력하라
 		Scanner sc = new Scanner(System.in);

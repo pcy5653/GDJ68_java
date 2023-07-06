@@ -16,7 +16,7 @@ public class Study5_while {
 		while(check) {
 			System.out.println("0-10 미만 숫자 입력");
 			int num = sc.nextInt();
-			
+			 
 			if(result==num) {
 				System.out.println("정답입니다.");
 				check =! check;  // 정답일 경우 빠져나오는 방법 1

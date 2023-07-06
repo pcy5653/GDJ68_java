@@ -17,7 +17,7 @@ public class Array6 {
 		// nums1, nums2의 배열을 모아라
 		int [][] ars = new int[2][3];
 		
-		ars = new int[2][];
+		ars = new int[2][]; 
 		ars[0]= new int[3];
 		ars[1]= new int[6];
 		//{{0,0,0}, {0,0,0,0,0,0}};

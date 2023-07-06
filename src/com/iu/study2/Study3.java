@@ -8,7 +8,7 @@ public class Study3 {
 		// 여러개 중 하나 선택
 		 
 		int num = 10;
-		
+		 
 		switch(num*2) {
 		case 10:
 			System.out.println("num 10");

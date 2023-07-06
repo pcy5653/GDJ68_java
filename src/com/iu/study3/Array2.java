@@ -15,7 +15,7 @@ public class Array2 {
 			System.out.println(i+1+" 번째 숫자 입력");
 			nums[i]=sc.nextInt();
 		}
-		
+		 
 		// int i = 0; 두번째 for문의 지역변수라 동일 시 되지 않음.
 		for(int i=0; i<j; i++) {
 			System.out.println(nums[i]);

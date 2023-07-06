@@ -67,7 +67,7 @@ public class Study5_while_ex2 {
 				   }
 			 }//1.2.3.4 공격 실행문 끝
 			System.out.println("몬스터 데미지는 "+monsterHp);
-		    
+		     
 			// 몬스터 공격
 			num=random.nextInt(41);
 			hp-=num;

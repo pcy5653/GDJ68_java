@@ -11,7 +11,7 @@ public class Product {
 	public void setPrice() {
 		// -가격일 수 있기에 조건문
 		if(price<1) {
-			this.price=1000;
+			this.price=1000; 
 		}
 		this.price=price;
 	}

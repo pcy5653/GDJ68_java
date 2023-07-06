@@ -17,7 +17,7 @@ public class StudentView {
 		
 		for(int i=0; i<total.length; i++) {
 			System.out.println(total[i].name);
-			System.out.println(total[i].gender);
+			System.out.println(total[i].gender); 
 		}	
 	}
 }

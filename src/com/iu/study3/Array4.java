@@ -16,7 +16,7 @@ public class Array4 {
 		for(int i=0;i<nums.length;i++) {
 			if(idx==i) {
 				// 입력한 idx가 i(nums[])와 같으면 증감식으로 올라가기
-				continue;
+				continue; 
 			}
 			copyNums[index]=nums[i];
 			// 위에 if문이 발생하면 index와 i의 값이 달라지기 때문에 

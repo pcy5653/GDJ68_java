@@ -14,7 +14,7 @@ public class Phone {
 	// 생성자 메서드
 	public Phone() {
 		this.company="Samsung";
-		this.brand="s20";
+		this.brand="s20"; 
 	}
 	
 	

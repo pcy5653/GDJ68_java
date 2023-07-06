@@ -16,7 +16,7 @@ public class Student {
 	int grade;
 	int deptno1;
 	int deptno2;
-	String name;
+	String name; 
 	String id;
 	char gender;
 	

@@ -9,7 +9,7 @@ public class Rifle {
 	// 메인메서드 -> public static void main(String [] args) {}
 	
 	// int count : 매개변수들 선언
-	public void shoot1(int count) {
+	public void shoot1(int count) { 
 		int damage=20;
 		for(int i =0; i<count; i++) {
 			System.out.println("탕");

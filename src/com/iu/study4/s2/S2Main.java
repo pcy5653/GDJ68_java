@@ -19,7 +19,7 @@ public class S2Main {
 		// StudentController class 변수 선언
 		StudentController control = new StudentController();
 		// control class에서 start()메서드의 반환값 보여주기
-		boolean result = control.start();
+		// boolean result = control.start();
 		// makeStudent 메서드
 //		Student student = sv.makeStudentOne();
 //		System.out.println(student.avg);
@@ -28,10 +28,10 @@ public class S2Main {
 //		Student [] st = sv.makeStudents();
 		
 		// StudentController class 변수 선언 (객체생성)
-		StudentController control = new StudentController();
+		StudentController studentcontrol = new StudentController();
 		// control class에서 start()메서드의 반환값 보여주기
 		// boolean result = control.start();
-		control.start();
+		studentcontrol.start(); 
 		
 //		// 2=셰프관련 class 활용
 //		Chef chef = new Chef();

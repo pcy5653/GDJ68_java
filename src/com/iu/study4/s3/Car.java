@@ -17,7 +17,7 @@ public class Car {
 		
 		// 다른 생성자 호출 this();
 		this("A7");
-		this.company="Audi";
+		this.company="Audi"; 
 		this.brand="A7";
 		this.color="black";
 		this.price=9985;

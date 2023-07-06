@@ -19,7 +19,7 @@ public class StudentService {
 			if(num==count[i].getNum(num)) {
 				// true이고 1명의 학생의 주소를 받기위해 Student [](여러명)중에 Student타입(1명)에 넣는다.  
 				student = count[i];
-				break;
+				break; 
 			}
 		}
 		return student;

@@ -99,7 +99,7 @@ public class Study5_while_ex1 {
 		/*
 		[강사님]
 		int a;
-		
+		 
 		for(a=1; a<15; a++) {
 			
 			// 5의배수 레벨 시 골드 지급
