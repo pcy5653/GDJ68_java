@@ -1,10 +1,13 @@
 package com.iu.study4.s2;
 import java.util.Scanner;
  
+
+import java.util.Scanner;
+
 public class StudentController {
 	// 	SS와 SV의 메서드를 총 관리라는 곳 = SC
 	
-	public void start() {
+	public boolean start() {
 		// 1. 학생 정보 생성 -- makeStudents 호출
 		// 2. 학생 정보 출력 -- SV에서 출력
 		// 3. 프로그램 종료
@@ -81,5 +84,32 @@ public class StudentController {
 				
 		
 		
+		boolean check = true;
+				
+		while(check) {
+			System.out.println("학생 정보를 생성하세요!");
+					
+			// SS class 선언
+			StudentService service = new StudentService();
+			// 위 class의 method 선언
+			Student [] count = service.makeStudents();
+					
+			// SC class 선언
+			StudentView view = new StudentView();
+			// 위 class의 method 선언
+			Student [] stview = view.st1(count);
+					
+			// 입력 or 종료 선택
+			System.out.println("다시 입력 : 1 , 프로그램 종료 : 2");
+			int push = sc.nextInt();
+					
+			if(push==2) {
+				System.out.println("프로그램 종료합니다.");
+				check =! check;
+				break;
+			}
+					
+		}
+		return check;
 	}
 }
