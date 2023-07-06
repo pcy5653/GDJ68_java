@@ -4,6 +4,29 @@ import java.util.Scanner;
 
 public class StudentService {
 	
+	// 3번 누를시 해당 메서드 실행(입력), 매개변수는 총학생의 데이터중에서 찾아야하기 때문에 count
+	public Student findByNum(Student [] count) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("찾을려는 학생의 번호를 입력하세요.");
+		int num = sc.nextInt();
+		
+		// 1명의 학생의 데이터를 받을(주소릃 넣는다) 변수 설정
+		//Student타입의 student변수를 리셋해주는 개념으로 null값 넣어주기(References 타입)
+		Student student = null;
+		
+		// 1번에서 입력한 학생배열에서 찾는 반복문
+		for(int i=0; i<count.length; i++) {
+			if(num==count[i].getNum(num)) {
+				// true이고 1명의 학생의 주소를 받기위해 Student [](여러명)중에 Student타입(1명)에 넣는다.  
+				student = count[i];
+				break;
+			}
+		}
+		return student;
+	}
+	
+	
+	
 	public Student makeStudentOne() {
 		// 학생 한명 만들어서 이름, 번호, 국어, 영어, 수학
 		// 총점 평균을 계산 
@@ -13,19 +36,16 @@ public class StudentService {
 		Student s = new Student();
 		
 		System.out.println("이름");
-		s.name = sc.next();
+		s.setName(sc.next());
 		System.out.println("번호");
-		s.num = sc.nextInt();
+		s.setNum(sc.nextInt());
 		System.out.println("국어");
-		s.kor = sc.nextInt();
+		s.setKor(sc.nextInt());
 		System.out.println("영어");
-		s.eng = sc.nextInt();
+		s.setEng(sc.nextInt());
 		System.out.println("수학");
-		s.math = sc.nextInt();
+		s.setMath(sc.nextInt());
 		
-		s.total = s.kor + s.eng + s.math;
-		s.avg = s.total/3;
-
 		return s;
 	}
 	
@@ -46,30 +66,32 @@ public class StudentService {
 		//1
 		System.out.println("학생수를 입력하세요");
 		int i = sc.nextInt();
+		
+		// 1=> 학생을 담을 배열 생성
 		Student [] count = new Student[i];
 		
 		//2
-		for(int j=0; j<count.length; j++) {
+		for(int j=0; j<i; j++) {
 			Student s1 = new Student();
 			
 			//3
 			System.out.println("이름");
-			s1.name= sc.next();
+			s1.setName(sc.next());
 			
 			System.out.println("번호");
-			s1.num= sc.nextInt();
+			s1.setNum(sc.nextInt());
 			
 			System.out.println("국어");
-			s1.kor= sc.nextInt();
+			s1.setKor(sc.nextInt());
 			
 			System.out.println("영어");
-			s1.eng= sc.nextInt();
+			s1.setEng(sc.nextInt());
 			
 			System.out.println("수학");
-			s1.math= sc.nextInt();
+			s1.setMath(sc.nextInt());
 			
-			s1.total = s1.kor + s1.eng + s1.math;		
-			s1.avg = s1.total/3;
+			// student객체에서 total, avg 출력
+			s1.cal();
 			
 			count[j] = s1;
 		}
