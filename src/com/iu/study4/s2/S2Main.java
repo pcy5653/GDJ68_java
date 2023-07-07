@@ -1,7 +1,7 @@
 package com.iu.study4.s2;
 
 public class S2Main {
-
+		// 리턴변수, 매개변수, 참조변수 this, 접근지정자 사용
 	public static void main(String[] args) {
 		// 1. 프로그램 실행
 		// 2. 테스트 용도
